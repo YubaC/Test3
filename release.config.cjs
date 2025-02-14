@@ -6,7 +6,7 @@ module.exports = {
             {
                 parserOpts: {
                     headerPattern:
-                        /^.+?\s?([A-Za-z]+)(!?)(?:\((.*)\))?: (.*)$/,
+                        /^.+?\s?([A-Z,a-z]+)(?:\((.*)\))?(!?): (.*)$/,
                     headerCorrespondence: [
                         "type",
                         "scope",
@@ -15,7 +15,7 @@ module.exports = {
                     ],
                 },
                 releaseRules: [
-                    { breaking: "!", release: "major" },
+                    { breaking: true, release: "major" },
                     { type: "Feat", release: "minor" },
                 ],
             },
