@@ -23,11 +23,6 @@ module.exports = {
                 },
                 // releaseRules：当 breaking 存在时触发 major release，
                 // 否则按照 type 来判断（Feat -> minor, Fix -> patch）
-                releaseRules: [
-                    { breaking: true, release: "major" },
-                    // { type: "Feat", release: "minor" },
-                    // { type: "Fix", release: "patch" },
-                ],
             },
         ],
 
