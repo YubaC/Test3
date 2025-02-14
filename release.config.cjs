@@ -26,11 +26,18 @@ module.exports = {
 
         // 将更新后的 package.json 和 CHANGELOG.md 提交到仓库
         [
-            "@semantic-release/git",
+            "semantic-release-github-pullrequest",
             {
                 assets: ["package.json", "CHANGELOG.md"],
-                message: "chore(release): ${nextRelease.version} [skip ci]",
+                baseRef: "main",
             },
         ],
+        // [
+        //     "@semantic-release/git",
+        //     {
+        //         assets: ["package.json", "CHANGELOG.md"],
+        //         message: "chore(release): ${nextRelease.version} [skip ci]",
+        //     },
+        // ],
     ],
 };
