@@ -29,8 +29,6 @@
 //     // preset: 'angular',
 // };
 module.exports = {
-    repositoryUrl: "git@github.com:YubaC/Test3.git", // 使用 SSH 地址
-
     // 指定进行版本发布的分支
     branches: ["main"],
 
