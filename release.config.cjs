@@ -23,12 +23,22 @@ module.exports = {
         ],
 
         // 将更新后的 package.json 和 CHANGELOG.md 提交到仓库
+        // [
+        //     "semantic-release-github-pullrequest",
+        //     {
+        //         assets: ["package.json", "CHANGELOG.md"],
+        //         branch: "release/${nextRelease.version}",
+        //     },
+        // ],
         [
-            "semantic-release-github-pullrequest",
+            "@semantic-release/exec",
             {
-                assets: ["package.json", "CHANGELOG.md"],
-                baseRef: "main",
-                branch: "release/${nextRelease.version}",
+                publishCmd: `
+                    git checkout -b release/\${nextRelease.version} &&
+                    git add package.json CHANGELOG.md &&
+                    git commit -m "chore(release): \${nextRelease.version} [skip ci]" &&
+                    git push origin release/\${nextRelease.version} &&
+                    gh pr create --fill --base main`,
             },
         ],
         // [
