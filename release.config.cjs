@@ -10,7 +10,7 @@ module.exports = {
             // 捕获 Type（要求首字母大写，后续小写），然后捕获一个可选的 "!"（表示 breaking change），
             // 接着捕获可选的 scope（在括号内），最后是 subject。
             parserOpts: {
-                headerPattern: /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/,
+                headerPattern: /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/m,
                 // 对应分别为：type, breaking, scope, subject
                 headerCorrespondence: ["type", "breaking", "scope", "subject"],
             },
