@@ -14,12 +14,13 @@ module.exports = {
                     headerPattern:
                         /^(?:(\p{Extended_Pictographic}+\s?))?(\w+)(?:(([\w$.-* ])))?: (.)$/u,
                     // 对应分别为：type, breaking, scope, subject
-                    // headerCorrespondence: [
-                    //     "type",
-                    //     "breaking",
-                    //     "scope",
-                    //     "subject",
-                    // ],
+                    headerCorrespondence: [
+                        "emoji",
+                        "type",
+                        // "breaking",
+                        "scope",
+                        "subject",
+                    ],
                 },
                 // releaseRules：当 breaking 存在时触发 major release，
                 // 否则按照 type 来判断（Feat -> minor, Fix -> patch）
