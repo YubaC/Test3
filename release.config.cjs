@@ -18,6 +18,7 @@ module.exports = {
                     { breaking: true, release: "major" },
                     { type: "Feat", release: "minor" },
                 ],
+                debug: true,
             },
         ],
 
