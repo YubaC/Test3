@@ -15,7 +15,7 @@ module.exports = {
                     ],
                 },
                 releaseRules: [
-                    { breaking: true, release: "major" },
+                    { breaking: "!", release: "major" },
                     { type: "Feat", release: "minor" },
                 ],
             },
@@ -51,7 +51,7 @@ module.exports = {
         [
             "@semantic-release/exec",
             {
-                publishCmd: "sh sh.sh ${nextRelease.version}",
+                publishCmd: "bash sh.sh ${nextRelease.version}",
             },
         ],
         // [
