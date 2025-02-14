@@ -12,18 +12,23 @@ module.exports = {
                 // 接着捕获可选的 scope（在括号内），最后是 subject。
                 parserOpts: {
                     headerPattern:
-                        /^(?:(\p{Extended_Pictographic}+\s?))?(\w+)(?:(([\w$.-* ])))?: (.)$/u,
+                        /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/,
                     // 对应分别为：type, breaking, scope, subject
                     headerCorrespondence: [
-                        "emoji",
                         "type",
-                        // "breaking",
+                        "breaking",
                         "scope",
                         "subject",
                     ],
                 },
                 // releaseRules：当 breaking 存在时触发 major release，
                 // 否则按照 type 来判断（Feat -> minor, Fix -> patch）
+                releaseRules: [
+                    // 用正则表达式匹配 type（不区分大小写）
+                    { breaking: true, release: "major" },
+                    { type: /^feat$/i, release: "minor" },
+                    { type: /^fix$/i, release: "patch" },
+                ],
             },
         ],
 
