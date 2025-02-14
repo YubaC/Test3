@@ -15,7 +15,7 @@ module.exports = {
                     ],
                 },
                 releaseRules: [
-                    { breaking: "!", release: "major" },
+                    { breaking: true, release: "major" },
                     { type: "Feat", release: "minor" },
                 ],
             },
