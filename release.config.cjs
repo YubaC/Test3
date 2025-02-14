@@ -12,14 +12,14 @@ module.exports = {
                 // 接着捕获可选的 scope（在括号内），最后是 subject。
                 parserOpts: {
                     headerPattern:
-                        /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/m,
+                        /^(?:(\p{Extended_Pictographic}+\s?))?(\w+)(?:(([\w$.-* ])))?: (.)$/u,
                     // 对应分别为：type, breaking, scope, subject
-                    headerCorrespondence: [
-                        "type",
-                        "breaking",
-                        "scope",
-                        "subject",
-                    ],
+                    // headerCorrespondence: [
+                    //     "type",
+                    //     "breaking",
+                    //     "scope",
+                    //     "subject",
+                    // ],
                 },
                 // releaseRules：当 breaking 存在时触发 major release，
                 // 否则按照 type 来判断（Feat -> minor, Fix -> patch）
