@@ -1,4 +1,6 @@
 module.exports = {
+    // Repository URL
+    repositoryUrl: "git@github.com:YubaC/Test3.git", // 使用 SSH 地址
     branches: ["main"],
     plugins: [
         // 分析 commit 信息计算下一个版本号
@@ -12,9 +14,9 @@ module.exports = {
                 // 接着捕获可选的 scope（在括号内），最后是 subject。
                 parserOpts: {
                     headerPattern:
-                        /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/,
-                    // 对应分别为：type, breaking, scope, subject
+                        /^([\p{Extended_Pictographic}]+)\s([A-Za-z]+)(!?)(?:((.)))?: (.)$/u,
                     headerCorrespondence: [
+                        "emoji",
                         "type",
                         "breaking",
                         "scope",
