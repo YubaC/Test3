@@ -5,8 +5,7 @@ module.exports = {
             "@semantic-release/commit-analyzer",
             {
                 parserOpts: {
-                    headerPattern:
-                        /^.+?\s?([A-Za-z]+)(!?)(?:\((.*)\))?: (.*)$/,
+                    headerPattern: /^([A-Za-z]+)(!?)(?:\((.*)\))?: (.*)$/,
                     headerCorrespondence: [
                         "type",
                         "breaking",
