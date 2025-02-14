@@ -9,8 +9,8 @@ module.exports = {
                         /^.+?\s?([A-Za-z]+)(!?)(?:\((.*)\))?: (.*)$/,
                     headerCorrespondence: [
                         "type",
-                        "breaking",
                         "scope",
+                        "breaking",
                         "subject",
                     ],
                 },
