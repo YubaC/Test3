@@ -15,7 +15,12 @@ export default {
                     ],
                 },
                 releaseRules: [
-                    { breaking: "!", release: "major" },
+                    {
+                        breaking: (() => {
+                            console.log("WCCCCCCCC!!!!!");
+                        })(),
+                        release: "major",
+                    },
                     { type: "Feat", release: "minor" },
                 ],
             },
