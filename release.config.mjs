@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     branches: ["main"],
     plugins: [
         [
@@ -6,7 +6,7 @@ module.exports = {
             {
                 parserOpts: {
                     headerPattern:
-                        /^.+?\s?([A-Z,a-z]+)(?:\((.*)\))?(?:(!)?): (.*)$/,
+                        /^.+?\s?([A-Z,a-z]+)(?:\((.*)\))?(!)?: (.*)$/,
                     headerCorrespondence: [
                         "type",
                         "scope",
