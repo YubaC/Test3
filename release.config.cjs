@@ -51,12 +51,7 @@ module.exports = {
         [
             "@semantic-release/exec",
             {
-                publishCmd: `
-                    git checkout -b release/\${nextRelease.version} &&
-                    git add package.json CHANGELOG.md &&
-                    git commit -m "chore(release): \${nextRelease.version} [skip ci]" &&
-                    git push origin release/\${nextRelease.version} &&
-                    gh pr create --fill --base main`,
+                publishCmd: "sh sh.sh ${nextRelease.version}",
             },
         ],
         // [
