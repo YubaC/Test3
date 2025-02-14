@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Yuba-Technology/WorkflowX.git"
+        "url": "git+https://github.com/YubaC/Test3.git"
     },
     "keywords": [
         "Archives",
@@ -27,9 +27,9 @@
     "author": "Yuba Technology",
     "license": "AGPL-3.0-or-later",
     "bugs": {
-        "url": "https://github.com/Yuba-Technology/WorkflowX/issues"
+        "url": "https://github.com/YubaC/Test3/issues"
     },
-    "homepage": "https://github.com/Yuba-Technology/WorkflowX#readme",
+    "homepage": "https://github.com/YubaC/Test3#readme",
     "devDependencies": {
         "@rollup/plugin-commonjs": "^28.0.2",
         "@rollup/plugin-node-resolve": "^16.0.0",

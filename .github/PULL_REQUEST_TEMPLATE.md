@@ -31,7 +31,7 @@
 <!-- Go over all the following points, and put an `x` in all the boxes that apply. -->
 <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
-- [ ] I have read the [contributing guidelines](https://github.com/Yuba-Technology/WorkflowX/blob/main/.github/CONTRIBUTING.md)
+- [ ] I have read the [contributing guidelines](https://github.com/YubaC/Test3/blob/main/.github/CONTRIBUTING.md)
 - [ ] My code follows the code style of the project _(using `npm run format` and `npm run lint`)_
 - [ ] My change introduces changes to the documentation
 - [ ] I have updated the documentation accordingly
