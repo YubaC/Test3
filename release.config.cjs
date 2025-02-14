@@ -12,7 +12,7 @@ module.exports = {
                 // 接着捕获可选的 scope（在括号内），最后是 subject。
                 parserOpts: {
                     headerPattern:
-                        /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/,
+                        /^.+?\s?([A-Z,a-z]+)(!?)(?:\((.*)\))?: (.*)$/m,
                     // 对应分别为：type, breaking, scope, subject
                     headerCorrespondence: [
                         "type",
