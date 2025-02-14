@@ -1,7 +1,25 @@
 module.exports = {
     branches: ["main"],
     plugins: [
-        "@semantic-release/commit-analyzer",
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                parserOpts: {
+                    headerPattern:
+                        /^.+?\s?([A-Za-z]+)(!?)(?:\((.*)\))?: (.*)$/,
+                    headerCorrespondence: [
+                        "type",
+                        "breaking",
+                        "scope",
+                        "subject",
+                    ],
+                },
+                releaseRules: [
+                    { breaking: true, release: "major" },
+                    { type: /feat/i, release: "minor" },
+                ],
+            },
+        ],
 
         "@semantic-release/release-notes-generator",
 
