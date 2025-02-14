@@ -15,7 +15,7 @@ export default {
                     ],
                 },
                 releaseRules: [
-                    { breaking: true, release: "major" },
+                    { breaking: "!", release: "major" },
                     { type: "Feat", release: "minor" },
                 ],
             },
