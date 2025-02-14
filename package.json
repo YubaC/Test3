@@ -36,6 +36,8 @@
         "@rollup/plugin-terser": "^0.4.4",
         "@rollup/plugin-typescript": "^12.1.2",
         "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/exec": "github:semantic-release/exec",
+        "@semantic-release/git": "^10.0.1",
         "@stylistic/eslint-plugin-ts": "^3.0.1",
         "@tsd/typescript": "^5.7.3",
         "@types/deep-equal": "^1.0.4",

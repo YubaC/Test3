@@ -9,7 +9,7 @@ module.exports = {
 
         // 执行 npm version 命令，更新 package.json 中的版本字段（不创建 git 标签）
         [
-            "semantic-release/exec",
+            "@semantic-release/exec",
             {
                 prepareCmd:
                     "npm version ${nextRelease.version} --no-git-tag-version",
