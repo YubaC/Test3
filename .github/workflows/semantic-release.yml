@@ -13,10 +13,10 @@ env:
   NODE: 20
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  lint:
+  semantic-release:
     runs-on: ubuntu-latest
 
     steps:
