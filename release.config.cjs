@@ -1,38 +1,7 @@
 module.exports = {
-    // Repository URL
-    repositoryUrl: "git@github.com:YubaC/Test3.git", // 使用 SSH 地址
     branches: ["main"],
     plugins: [
-        // 分析 commit 信息计算下一个版本号
-        [
-            "@semantic-release/commit-analyzer",
-            {
-                preset: "angular",
-                // 修改正则：
-                // 先匹配任意字符（Emoji 及可能的前置字符），后跟空格，
-                // 捕获 Type（要求首字母大写，后续小写），然后捕获一个可选的 "!"（表示 breaking change），
-                // 接着捕获可选的 scope（在括号内），最后是 subject。
-                parserOpts: {
-                    headerPattern:
-                        /^([\p{Extended_Pictographic}]+)\s([A-Za-z]+)(!?)(?:((.)))?: (.)$/u,
-                    headerCorrespondence: [
-                        "emoji",
-                        "type",
-                        "breaking",
-                        "scope",
-                        "subject",
-                    ],
-                },
-                // releaseRules：当 breaking 存在时触发 major release，
-                // 否则按照 type 来判断（Feat -> minor, Fix -> patch）
-                releaseRules: [
-                    // 用正则表达式匹配 type（不区分大小写）
-                    { breaking: true, release: "major" },
-                    { type: /^feat$/i, release: "minor" },
-                    { type: /^fix$/i, release: "patch" },
-                ],
-            },
-        ],
+        "@semantic-release/commit-analyzer",
 
         // 生成发布日志，用于生成 changelog 内容
         "@semantic-release/release-notes-generator",
