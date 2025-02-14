@@ -118,7 +118,7 @@ module.exports = {
             },
         },
         {
-            files: ["webpack.*.js", "jest.config.js"],
+            files: ["webpack.*.js", "jest.config.js", "release.config.cjs"],
             plugins: ["node"],
             env: {
                 node: true,
