@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/YubaC/Test3/compare/v2.5.0...v2.6.0) (2025-02-15)
+
+
+### Features
+
+* **workflows:** 更新发布工作流以支持 GitHub CLI 身份验证和远程 URL 设置 ([3ac27d9](https://github.com/YubaC/Test3/commit/3ac27d99b6650dbf191642dbfc9bddcc242224c9))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
