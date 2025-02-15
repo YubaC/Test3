@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/YubaC/Test3/compare/v2.8.0...v2.9.0) (2025-02-15)
+
+
+### Features
+
+* Update release.config.cjs ([0fefd37](https://github.com/YubaC/Test3/commit/0fefd37e429cd754adb45a36397156b78572e826))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
