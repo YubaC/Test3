@@ -44,6 +44,8 @@ jobs:
       - name: Push and open Pull request
         if: steps.semantic-release.outputs.next_version != ''
         run: |
+          git config --global user.name "GitHub Actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b release/${{ steps.semantic-release.outputs.next_version  }}
           git add package.json CHANGELOG.md
           git commit -m "chore(release): ${{ steps.semantic-release.outputs.next_version  }}"
