@@ -46,10 +46,14 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b release/${{ steps.semantic-release.outputs.next_version  }}
+          git checkout -b release/${{ steps.semantic-release.outputs.next_version }}
           git add package.json CHANGELOG.md
-          git commit -m "chore(release): ${{ steps.semantic-release.outputs.next_version  }}"
-          git push origin release/${{ steps.semantic-release.outputs.next_version  }}
-          gh pr create --title "chore(release): ${{ steps.semantic-release.outputs.next_version  }}" --body "chore(release): ${{ steps.semantic-release.outputs.next_version  }}" --base main --head release/${{ steps.semantic-release.outputs.next_version  }}
+          git commit -m "chore(release): ${{ steps.semantic-release.outputs.next_version }}"
+          # 设置 remote URL 带上 token 以便推送时进行身份验证
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push origin release/${{ steps.semantic-release.outputs.next_version }}
+          # 对 gh CLI 进行身份验证
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          gh pr create --title "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --body "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --base main --head release/${{ steps.semantic-release.outputs.next_version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
