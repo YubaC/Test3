@@ -44,6 +44,7 @@ jobs:
       - name: Push and open Pull request
         if: steps.semantic-release.outputs.next_version != ''
         run: |
+          unset GITHUB_TOKEN
           git config --global user.name "GitHub Actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b release/${{ steps.semantic-release.outputs.next_version }}
@@ -55,5 +56,3 @@ jobs:
           # 对 gh CLI 进行身份验证
           echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
           gh pr create --title "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --body "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --base main --head release/${{ steps.semantic-release.outputs.next_version }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
