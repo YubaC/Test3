@@ -22,7 +22,7 @@ export default {
                 parserOpts: {
                     // 匹配可选的 emoji（Unicode 范围可能需根据情况调整），后面跟空格，再匹配大写 type、可选 scope、冒号、空格和 subject
                     headerPattern:
-                        /^([\u{1F300}-\u{1F6FF}\u{1F900}-\u{1F9FF}]+\s?)?([A-Z]+)(?:\((.*)\))?:\s(.*)$/u,
+                        /^(\p{Emoji}\s?)?([A-Z]+)(?:\((.*)\))?:\s(.*)$/u,
                     headerCorrespondence: [
                         "emoji",
                         "type",
