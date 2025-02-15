@@ -1,5 +1,12 @@
 # Changelog
 
+# [2.1.0](https://github.com/YubaC/Test3/compare/v2.0.2...v2.1.0) (2025-02-15)
+
+
+### Features
+
+* **core:** migrate release configuration from JSON to TypeScript ([7a6d710](https://github.com/YubaC/Test3/commit/7a6d7100099581851aeb06d81d6e500de55b9414))
+
 ## [2.0.2](https://github.com/YubaC/Test3/compare/v2.0.1...v2.0.2) (2025-02-15)
 
 ## [2.0.1](https://github.com/YubaC/Test3/compare/v2.0.1-patch.0...v2.0.1) (2025-02-15)
