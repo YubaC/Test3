@@ -9,6 +9,7 @@ export default {
     },
     hooks: {
         "after:bump": [
+            // ???
             // "git push --set-upstream origin HEAD:release/v${version}",
             // "gh pr create --base main --title 'Release v${version}' --body 'Automated release PR'",
         ],
