@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/YubaC/Test3/compare/v2.6.0...v2.7.0) (2025-02-15)
+
+
+### Features
+
+* **workflows:** 移除 GITHUB_TOKEN 环境变量以避免潜在的身份验证问题 ([f9d7c50](https://github.com/YubaC/Test3/commit/f9d7c50de8d0309cc3ef0c1a182d648c4caaeecb))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
