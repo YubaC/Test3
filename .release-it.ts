@@ -20,19 +20,19 @@ export default {
             infile: "CHANGELOG.md",
             options: {
                 parserOpts: {
-                    // 匹配可选的 emoji（Unicode 范围可能需根据情况调整），后面跟空格，再匹配大写 type、可选 scope、冒号、空格和 subject
+                    //         // 匹配可选的 emoji（Unicode 范围可能需根据情况调整），后面跟空格，再匹配大写 type、可选 scope、冒号、空格和 subject
                     headerPattern: /^.?\s?([A-Za-z]+)(?:\((.*)\))?(!?): (.*)$/,
-                    headerCorrespondence: [
-                        "type",
-                        "scope",
-                        "breaking",
-                        "subject",
-                    ],
-                    releaseRules: [
-                        { breaking: true, release: "major" },
-                        { type: "Feat", release: "minor" },
-                        { type: "Fix", release: "patch" },
-                    ],
+                    //         headerCorrespondence: [
+                    //             "type",
+                    //             "scope",
+                    //             "breaking",
+                    //             "subject",
+                    //         ],
+                    //         releaseRules: [
+                    //             { breaking: true, release: "major" },
+                    //             { type: "Feat", release: "minor" },
+                    //             { type: "Fix", release: "patch" },
+                    //         ],
                 },
             },
         },
