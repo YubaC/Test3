@@ -1,3 +1,36 @@
+# Changelog
+
+## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
+
+## [2.1.7](https://github.com/YubaC/Test3/compare/v2.1.6...v2.1.7) (2025-02-15)
+
+## [2.1.6](https://github.com/YubaC/Test3/compare/v2.1.5...v2.1.6) (2025-02-15)
+
+## [2.1.5](https://github.com/YubaC/Test3/compare/v2.1.4...v2.1.5) (2025-02-15)
+
+## [2.1.4](https://github.com/YubaC/Test3/compare/v2.1.3...v2.1.4) (2025-02-15)
+
+## [2.1.3](https://github.com/YubaC/Test3/compare/v2.1.2...v2.1.3) (2025-02-15)
+
+## [2.1.2](https://github.com/YubaC/Test3/compare/v2.1.1...v2.1.2) (2025-02-15)
+
+## [2.1.1](https://github.com/YubaC/Test3/compare/v2.1.0...v2.1.1) (2025-02-15)
+
+# [2.1.0](https://github.com/YubaC/Test3/compare/v2.0.2...v2.1.0) (2025-02-15)
+
+
+### Features
+
+* **core:** migrate release configuration from JSON to TypeScript ([7a6d710](https://github.com/YubaC/Test3/commit/7a6d7100099581851aeb06d81d6e500de55b9414))
+
+## [2.0.2](https://github.com/YubaC/Test3/compare/v2.0.1...v2.0.2) (2025-02-15)
+
+## [2.0.1](https://github.com/YubaC/Test3/compare/v2.0.1-patch.0...v2.0.1) (2025-02-15)
+
+## [2.0.1-patch.0](https://github.com/YubaC/Test3/compare/v2.0.1-rc.0...v2.0.1-patch.0) (2025-02-15)
+
+## [2.0.1-rc.0](https://github.com/YubaC/Test3/compare/v2.0.0...v2.0.1-rc.0) (2025-02-15)
+
 # [1.1.0](https://github.com/YubaC/Test3/compare/v1.0.0...v1.1.0) (2025-02-14)
 
 
