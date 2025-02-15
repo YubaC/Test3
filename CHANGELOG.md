@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.0.2](https://github.com/YubaC/Test3/compare/v2.0.1...v2.0.2) (2025-02-15)
+
 ## [2.0.1](https://github.com/YubaC/Test3/compare/v2.0.1-patch.0...v2.0.1) (2025-02-15)
 
 ## [2.0.1-patch.0](https://github.com/YubaC/Test3/compare/v2.0.1-rc.0...v2.0.1-patch.0) (2025-02-15)
