@@ -42,6 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push and open Pull request
+        if: steps.semantic-release.outputs.next_version != ''
         run: |
           # Open new branch
           git checkout -b release/${{ steps.semantic-release.outputs.next_version  }}
