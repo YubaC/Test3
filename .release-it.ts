@@ -28,6 +28,11 @@ export default {
                         "breaking",
                         "subject",
                     ],
+                    releaseRules: [
+                        { breaking: true, release: "major" },
+                        { type: "Feat", release: "minor" },
+                        { type: "Fix", release: "patch" },
+                    ],
                 },
             },
         },
