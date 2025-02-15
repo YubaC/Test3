@@ -1,3 +1,4 @@
+import { head } from "lodash";
 import type { Config } from "release-it";
 
 export default {
@@ -21,7 +22,9 @@ export default {
             options: {
                 parserOpts: {
                     //         // 匹配可选的 emoji（Unicode 范围可能需根据情况调整），后面跟空格，再匹配大写 type、可选 scope、冒号、空格和 subject
-                    headerPattern: /^.?\s?([A-Za-z]+)(?:\((.*)\))?: (.*)$/,
+                    // headerPattern: /^.?\s?([A-Za-z]+)(?:\((.*)\))?: (.*)$/,
+                    headerPattern:
+                        /^.?\s?(\w*)(?:\(([\w\$\.\-\* ]*)\))?\: (.*)$/,
                     //         headerCorrespondence: [
                     //             "type",
                     //             "scope",
