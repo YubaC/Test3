@@ -16,7 +16,7 @@ export default {
     },
     plugins: {
         "@release-it/conventional-changelog": {
-            preset: "angular",
+            preset: "conventionalcommits",
             infile: "CHANGELOG.md",
             options: {
                 parserOpts: {
