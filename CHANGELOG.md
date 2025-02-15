@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/YubaC/Test3/compare/v2.7.0...v2.8.0) (2025-02-15)
+
+
+### Features
+
+* **workflows:** 更新 prepare-release.yml 以设置 Git 用户信息并清除 GITHUB_TOKEN 环境变量 ([57f579c](https://github.com/YubaC/Test3/commit/57f579c6bf9e98d4ca14ac5ce4c6fafd65895178))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
