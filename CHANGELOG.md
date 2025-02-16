@@ -1,3 +1,11 @@
+# [3.1.0](https://github.com/YubaC/Test3/compare/v3.0.0...v3.1.0) (2025-02-16)
+
+
+### Features
+
+* **workflows:** 将 PR 创建更改为草稿状态 ([47e4dfd](https://github.com/YubaC/Test3/commit/47e4dfde06c1d40df6a53be6ea58fa80a816336c))
+* 移除过时的提交配置注释 ([69f5454](https://github.com/YubaC/Test3/commit/69f5454531250c14919502c2c52a87f559a581ba))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
