@@ -1,7 +1,6 @@
 module.exports = {
     branches: ["develop"],
-    // 设置空的 tagFormat 禁用 git tag 的生成
-    tagFormat: "",
+    gitTagRelease: false,
     plugins: [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
