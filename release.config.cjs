@@ -1,5 +1,5 @@
 module.exports = {
-    branches: ["main"],
+    branches: ["develop"],
     plugins: [
         "@semantic-release/commit-analyzer",
 
@@ -24,14 +24,10 @@ module.exports = {
         [
             "@semantic-release/exec",
             {
-                // 注意：这里的 set-output 用法适用于较早版本的 GitHub Actions，若遇到 set-output 废弃问题，
-                // 可参考 GitHub 文档使用环境文件的方法，例如：
-                // echo "next_version=${nextRelease.version}" >> $GITHUB_OUTPUT
                 successCmd:
                     'echo "next_version=${nextRelease.version}" >> $GITHUB_OUTPUT',
-                // 'echo "::set-output name=next_version::${nextRelease.version}"',
             },
-        ]
+        ],
         // 将更新后的 package.json 和 CHANGELOG.md 提交到仓库
         // [
         //     "semantic-release-github-pullrequest",

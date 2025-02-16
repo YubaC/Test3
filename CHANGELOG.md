@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/YubaC/Test3/compare/v2.9.0...v3.0.0) (2025-02-16)
+
+
+### Features
+
+* 更新 release.config.cjs，移除过时的 set-output 用法注释 ([ce9deeb](https://github.com/YubaC/Test3/commit/ce9deeb8f39eea2eb9eee0b698dd74766d2d6341))
+
+
+### BREAKING CHANGES
+
+* 无
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
