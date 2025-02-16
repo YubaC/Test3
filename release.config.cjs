@@ -1,6 +1,5 @@
 module.exports = {
     branches: ["develop"],
-    tagFormat: false,
     plugins: [
         "@semantic-release/commit-analyzer",
 
@@ -10,7 +9,7 @@ module.exports = {
         [
             "@semantic-release/exec",
             {
-                prepareCmd:
+                publishCmd:
                     "npm version ${nextRelease.version} --no-git-tag-version",
             },
         ],
