@@ -28,31 +28,5 @@ module.exports = {
                     'echo "next_version=${nextRelease.version}" >> $GITHUB_OUTPUT',
             },
         ],
-        // 将更新后的 package.json 和 CHANGELOG.md 提交到仓库
-        // [
-        //     "semantic-release-github-pullrequest",
-        //     {
-        //         assets: ["package.json", "CHANGELOG.md"],
-        //         branch: "release/${nextRelease.version}",
-        //     },
-        // ],
-        // [
-        //     "@semantic-release/exec",
-        //     {
-        //         publishCmd: `
-        //             git checkout -b release/\${nextRelease.version} &&
-        //             git add package.json CHANGELOG.md &&
-        //             git commit -m "chore(release): \${nextRelease.version} [skip ci]" &&
-        //             git push origin release/\${nextRelease.version} &&
-        //             gh pr create --fill --base main`,
-        //     },
-        // ],
-        // [
-        //     "@semantic-release/git",
-        //     {
-        //         assets: ["package.json", "CHANGELOG.md"],
-        //         message: "chore(release): ${nextRelease.version} [skip ci]",
-        //     },
-        // ],
     ],
 };
