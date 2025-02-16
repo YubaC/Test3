@@ -1,5 +1,5 @@
 module.exports = {
-    branches: ["main"],
+    branches: ["develop"],
     plugins: [
         "@semantic-release/commit-analyzer",
 
@@ -31,7 +31,7 @@ module.exports = {
                     'echo "next_version=${nextRelease.version}" >> $GITHUB_OUTPUT',
                 // 'echo "::set-output name=next_version::${nextRelease.version}"',
             },
-        ]
+        ],
         // 将更新后的 package.json 和 CHANGELOG.md 提交到仓库
         // [
         //     "semantic-release-github-pullrequest",
