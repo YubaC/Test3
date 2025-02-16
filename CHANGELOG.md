@@ -1,3 +1,11 @@
+# [3.2.0](https://github.com/YubaC/Test3/compare/v3.1.0...v3.2.0) (2025-02-16)
+
+
+### Features
+
+* **release:** 更新 release.config.cjs，禁用标签格式 ([4862034](https://github.com/YubaC/Test3/commit/48620348bfd92e5244c2e7d76fadedcc4df17127))
+* **release:** 移除标签格式配置并更新发布命令 ([1b82009](https://github.com/YubaC/Test3/commit/1b820099786b780f6a51a1adc1c956204ccc26bc))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
