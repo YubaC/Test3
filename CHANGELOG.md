@@ -1,3 +1,11 @@
+# [3.3.0](https://github.com/YubaC/Test3/compare/v3.2.0...v3.3.0) (2025-02-16)
+
+
+### Features
+
+* **release:** 禁用 git tag 生成并更新配置 ([8aa8055](https://github.com/YubaC/Test3/commit/8aa8055422eac6c1e54cc4a5388241f8c2816c0a))
+* **release:** 禁用 git tag 生成并设置空的 tagFormat ([024f020](https://github.com/YubaC/Test3/commit/024f02027cdd7f8f2bd631d9c5461d43a50f1e71))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
