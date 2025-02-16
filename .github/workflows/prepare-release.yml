@@ -1,11 +1,6 @@
 name: Prepare Release
 
 on:
-  # push:
-  #   branches:
-  #     - main
-  #     - develop
-  # pull_request:
   workflow_dispatch:
 
 env:
@@ -56,4 +51,4 @@ jobs:
           git push origin release/${{ steps.semantic-release.outputs.next_version }}
           # 使用 gh CLI 前清除 GITHUB_TOKEN 环境变量
           env -u GITHUB_TOKEN gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
-          gh pr create --title "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --body "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --base main --head release/${{ steps.semantic-release.outputs.next_version }}
+          gh pr create --draft --title "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --body "chore(release): ${{ steps.semantic-release.outputs.next_version }}" --base main --head release/${{ steps.semantic-release.outputs.next_version }}

@@ -1,3 +1,10 @@
+# [3.4.0](https://github.com/YubaC/Test3/compare/v3.3.0...v3.4.0) (2025-02-16)
+
+
+### Features
+
+* **release:** 更新配置以禁用 Git 标签并手动读取版本 ([86cb869](https://github.com/YubaC/Test3/commit/86cb869e68bdd81baf1e6a5c21880b190b5ab3fd))
+
 # Changelog
 
 ## [2.1.8](https://github.com/YubaC/Test3/compare/v2.1.7...v2.1.8) (2025-02-15)
