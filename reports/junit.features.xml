@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="0.007" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-13T12:13:21.286Z">
+  <testcase classname="hello function" name="Greet a user by name" time="0.002">
+    <system-out><![CDATA[Given the name is "Alice"...................................................passed
+When I call the hello function..............................................passed
+Then the result should be "Hello, Alice!"...................................passed]]></system-out>
+  </testcase>
+</testsuite>
