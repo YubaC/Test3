@@ -24,23 +24,30 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           persist-credentials: false
-      - name: Unit Test Report
-        uses: dorny/test-reporter@v2
-        if: ${{ !cancelled() }} # run this step even if previous step failed
-        with:
-          name: Unit Tests
-          path: reports/junit.unit.xml
-          reporter: jest-junit
-          report-title: "Unit Test Results"
-          badge-title: "unit"
 
-      - name: Feature Test Report
-        uses: dorny/test-reporter@v2
-        if: ${{ !cancelled() }} # run this step even if previous step failed
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: (!cancelled())
         with:
-          name: Feature Tests
-          path: reports/junit.features.xml
-          reporter: java-junit
-          report-title: "Feature Test Results (Acceptance)"
-          badge-title: "features"
-          list-suites: "none"
+          files: |
+            reports/*.xml
+      # - name: Unit Test Report
+      #   uses: dorny/test-reporter@v2
+      #   if: ${{ !cancelled() }} # run this step even if previous step failed
+      #   with:
+      #     name: Unit Tests
+      #     path: reports/junit.unit.xml
+      #     reporter: jest-junit
+      #     report-title: "Unit Test Results"
+      #     badge-title: "unit"
+
+      # - name: Feature Test Report
+      #   uses: dorny/test-reporter@v2
+      #   if: ${{ !cancelled() }} # run this step even if previous step failed
+      #   with:
+      #     name: Feature Tests
+      #     path: reports/junit.features.xml
+      #     reporter: java-junit
+      #     report-title: "Feature Test Results (Acceptance)"
+      #     badge-title: "features"
+      #     list-suites: "none"
