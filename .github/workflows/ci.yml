@@ -24,18 +24,23 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           persist-credentials: false
-      - name: Test Report
+      - name: Unit Test Report
         uses: dorny/test-reporter@v2
         if: ${{ !cancelled() }} # run this step even if previous step failed
         with:
-          name: JEST Tests # Name of the check run which will be created
-          path: reports/junit.unit.xml # Path to test results
-          reporter: jest-junit # Format of test results
+          name: Unit Tests
+          path: reports/junit.unit.xml
+          reporter: jest-junit
+          report-title: "Unit Test Results"
+          badge-title: "unit"
 
-      - name: Test Report
+      - name: Feature Test Report
         uses: dorny/test-reporter@v2
         if: ${{ !cancelled() }} # run this step even if previous step failed
         with:
-          name: JEST Tests # Name of the check run which will be created
-          path: reports/junit.features.xml # Path to test results
-          reporter: java-junit # Format of test results
+          name: Feature Tests
+          path: reports/junit.features.xml
+          reporter: java-junit
+          report-title: "Feature Test Results (Acceptance)"
+          badge-title: "features"
+          list-suites: "none"
