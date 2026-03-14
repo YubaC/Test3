@@ -1,0 +1,52 @@
+-----Reports-----
+id|title|content
+0|Project Gutenberg|"# Project Gutenberg
+
+The community revolves around Project Gutenberg, a non-profit library that hosts eBooks. Charles Dickens' work 'A Christmas Carol' is hosted on this platform and was illustrated by Arthur Rackham.
+
+## Charles Dickens as an author
+
+Charles Dickens authored the classic 'A Christmas Carol', which is available in electronic form through Project Gutenberg. His work's presence here highlights his significant contribution to literature, both artistically and commercially.
+
+## Arthur Rackham's role in illustrations
+
+The British illustrator Arthur Rackham provided illustrations for Dickens' 'A Christmas Carol', which is available on the Project Gutenberg platform. This association showcases how different creators contribute to a work's visual representation, enhancing its appeal and accessibility.
+
+## Project Gutenberg as a repository
+
+Project Gutenberg serves as a repository for public domain texts like 'A Christmas Carol'. Its role in hosting these works contributes to the availability of literature resources for free. This platform has significantly impacted literary distribution, making classic works more accessible."
+
+
+-----Entities-----
+id|entity|description|number of relationships
+1|CHARLES DICKENS|Charles Dickens was an English writer and author of A Christmas Carol|1
+2|ARTHUR RACKHAM|Arthur Rackham was a British illustrator who provided illustrations for A Christmas Carol|1
+0|PROJECT GUTENBERG|Project Gutenberg is a non-profit library of public domain texts that provides eBooks for free|2
+
+
+-----Relationships-----
+id|source|target|description|weight|links
+0|PROJECT GUTENBERG|CHARLES DICKENS|Project Gutenberg hosts the eBook version of Charles Dickens' work, A Christmzas Carol|3.0|2
+1|PROJECT GUTENBERG|ARTHUR RACKHAM|Arthur Rackham provided illustrations for A Christmzas Carol hosted by Project Gutenberg|1.0|2
+
+
+
+
+-----Sources-----
+id|text
+0|﻿The Project Gutenberg eBook of A Christmas Carol
+    
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at www.gutenberg.org. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.
+
+Title: A Christmzas Carol
+
+Author: Charles Dickens
+
+Illustrator: Arthur Rackham
+
